@@ -1,0 +1,33 @@
+{
+    "artist": [
+        {
+            "id": 0,
+            "name": "Stamp",
+            "songs": [
+                "one",
+                "two",
+                "three"
+            ],
+            "image": "https://www.daco-thai.com/wp-content/uploads/2021/07/Stamp-04.jpg"
+        },
+        {
+            "id": 1,
+            "name": "Bowkylion",
+            "songs": [
+                "test",
+                "test2",
+                "test3"
+            ],
+            "image": "https://www.daco-thai.com/wp-content/uploads/2021/07/Stamp-04.jpg"
+        }
+    ],
+
+    "concert": [
+        {
+            "concert_id": 0,
+            "artist_id" : 1,
+            "name": "Lanta",
+            "image": "https://www.daco-thai.com/wp-content/uploads/2021/07/Stamp-04.jpg"
+        }
+    ]
+}
