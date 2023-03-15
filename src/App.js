@@ -12,7 +12,6 @@ function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
-      <Artistbox></Artistbox>
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
