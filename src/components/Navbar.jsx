@@ -3,19 +3,19 @@ import React from 'react'
 const Navbar = () => {
   return (
     <div>
-      <nav class="px-10 py-10">
-          <ul class="flex flex-row py-4 rounded-lg bg-gray-50 text-sm font-medium">
+      <nav className="">
+          <ul className="flex flex-row py-8 rounded-lg bg-gray-50 text-sm font-medium shadow-md">
             <li>
-              <a href="#" class="flex-auto py-4 pl-3 pr-4 rounded text-blue-700">Home</a>
+              <a href="#" className="flex-auto py- pl-32 pr-4 rounded text-blue-700">Home</a>
             </li>
             <li>
-              <a href="#" class="flex-auto py-4 pl-3 pr-4 text-gray-700 rounded hover:bg-blue-500 hover:text-white">Favourite</a>
+              <a href="#" className="flex-auto py-4 pl-4 pr-4 text-gray-700 rounded hover:bg-blue-500 hover:text-white">Favourite</a>
             </li>
             <li>
-              <a href="#" class="flex-auto py-4 pl-3 pr-4 text-gray-700 rounded hover:bg-blue-500 hover:text-white">Profile</a>
+              <a href="#" className="flex-auto py-4 pl-4 pr-4 text-gray-700 rounded hover:bg-blue-500 hover:text-white">Profile</a>
             </li>
             <li>
-              <a href="#" class="flex-auto py-4 pl-3 pr-4 text-gray-700 rounded hover:bg-blue-500 hover:text-white">Login</a>
+              <a href="#" className="flex-auto py-4 pl-4 pr-4 text-gray-700 rounded hover:bg-blue-500 hover:text-white">Login</a>
             </li>
           </ul>
       </nav>
