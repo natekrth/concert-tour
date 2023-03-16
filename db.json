@@ -27,6 +27,10 @@
             "concert_id": 0,
             "artist_id" : 1,
             "name": "Lanta",
+            "date": "01-02-2556",
+            "day": "Friday",
+            "place": "Siam Square",
+            "description": "Lorem ipsum dolor sit amet, consectetur",
             "image": "https://cf.shopee.co.th/file/th-11134207-23010-kzv1dmm2t5lv76"
         }
     ]
