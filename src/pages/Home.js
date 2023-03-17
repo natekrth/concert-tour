@@ -1,6 +1,7 @@
 import React from 'react'
 // import Navbar from '../components/Navbar'Tk96
 import Artistbox from '../components/Artistbox'
+import Favbox from '../components/Favbox'
 
 import Upcomingbox from '../components/Upcomingbox'
 
@@ -23,9 +24,9 @@ const Home = () => {
           <p className='text-right mt-7 mr-8 font-normal hover:underline ml-8'><a href="url">Show all</a></p>
         </div>
         <div className='grid grid-cols-3 gap-5 m-5 max-[120px]:grid-cols-2'>
-          <Upcomingbox></Upcomingbox>
-          <Upcomingbox></Upcomingbox>
-          <Upcomingbox></Upcomingbox>
+          <Favbox></Favbox>
+          <Favbox></Favbox>
+          <Favbox></Favbox>
         </div>
 
         <div className='grid grid-cols-2'>
