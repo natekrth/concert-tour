@@ -4,11 +4,9 @@ const Upcomingbox = () => {
   return (
     <div>
         <div className='flex h-36'>
-            <div class="flex-initial w-32 bg-blue-500 rounded-l-lg">
-                Photo
-            </div>
-            <div class="flex-initial w-64 bg-blue-800 rounded-r-lg">
-                24 Stamp
+            <img className="flex-initial w-32 object-cover rounded-l-lg" src="https://www.daco-thai.com/wp-content/uploads/2021/07/Stamp-01.jpg" alt="" />
+            <div className="flex-initial w-64 bg-white rounded-r-lg">
+                <p className='flex justify-center '>24 Stamp</p>
             </div>
         </div>
     </div>
