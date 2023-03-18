@@ -8,7 +8,7 @@ const Favbox = () => {
             <div className="flex-none w-auto bg-white rounded-r-lg grid grid-cols-1">
                 <div className='w-64 m-auto'>
                     <p className='text-3xl font-semibold text-red-400'>Bowkylion</p>
-                    <p className='text-gray-400'>What The Duck</p>
+                    <p className='text-gray-400'>Rats Records</p>
                 </div>
             </div>
         </div>

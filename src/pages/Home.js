@@ -2,12 +2,13 @@ import React from 'react'
 // import Navbar from '../components/Navbar'Tk96
 import Artistbox from '../components/Artistbox'
 import Favbox from '../components/Favbox'
-
+import Slide from '../components/Slide'
 import Upcomingbox from '../components/Upcomingbox'
 
 const Home = () => {
   return (
     <div>
+      <Slide></Slide>
       <div className='mx-24'>
         <div className='grid grid-cols-2'>
           <h1 className='text-left mt-7 ml-8 font-semibold'>Upcoming...</h1>
