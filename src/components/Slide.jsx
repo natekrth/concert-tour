@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 
@@ -24,36 +24,47 @@ const Slide = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
+    // clearTimeout();
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
+    console.log(newIndex);
   };
 
   const nextSlide = () => {
+    // clearTimeout();
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
+    console.log(newIndex);
   };
 
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };
 
+  useEffect(() => {
+    setTimeout(() => {
+      nextSlide();
+    }, 5000);
+  });
+//   setTimeout(prevSlide, 2000);
+
   return (
     <div>
-      <div className="max-w-[1400px] h-[300px] w-full m-auto py-8 px-4 relative group">
+      <div className="max-w-[1400px] h-[300px] w-full m-auto py-8 px-10 -mb-9 relative group">
         <div
           style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
           className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
         ></div>
         {/* Left Arrow */}
-        <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-          <BsChevronCompactLeft onClick={prevSlide} size={30} />
-        </div>
+        {/* <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+          <BsChevronCompactLeft onClick={prevSlide} size={30}/>
+        </div> */}
         {/* Right Arrow */}
-        <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+        {/* <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
           <BsChevronCompactRight onClick={nextSlide} size={30} />
-        </div>
+        </div> */}
         <div className="flex top-4 justify-center py-2">
           {slides.map((slide, slideIndex) => (
             <div
@@ -61,7 +72,7 @@ const Slide = () => {
               onClick={() => goToSlide(slideIndex)}
               className="text-2xl cursor-pointer"
             >
-              <RxDotFilled />
+              {/* <RxDotFilled /> */}
             </div>
           ))}
         </div>
