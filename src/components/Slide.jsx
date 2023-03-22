@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 // import { RxDotFilled } from "react-icons/rx";
 
@@ -51,11 +51,9 @@ const Slide = () => {
 //     }, 5000);
 //   });
 //   setTimeout(prevSlide, 5000);
-    const time = () => {
-        setTimeout(() => {
-            nextSlide();
-        }, 5000);
-    };
+    const time = setTimeout(() => {
+        nextSlide();
+    }, 5000);
 
   return (
     <div>
