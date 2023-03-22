@@ -461,20 +461,32 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.m-5 {
+  margin: 1.25rem;
+}
 .flex {
   display: flex;
+}
+.grid {
+  display: grid;
 }
 .h-32 {
   height: 8rem;
 }
-.w-80 {
-  width: 20rem;
+.w-full {
+  width: 100%;
 }
 .flex-auto {
   flex: 1 1 auto;
 }
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 .flex-row {
   flex-direction: row;
+}
+.gap-5 {
+  gap: 1.25rem;
 }
 .rounded {
   border-radius: 0.25rem;
