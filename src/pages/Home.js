@@ -14,7 +14,7 @@ const Home = () => {
           <h1 className='text-left mt-7 ml-8 font-semibold'>Upcoming...</h1>
           <p className='text-right mt-7 mr-8 font-normal hover:underline ml-8'><a href="url">Show all</a></p>
         </div>
-        <div className='grid grid-cols-3 gap-4 m-5'>
+        <div className='w-full grid grid-cols-3 gap-2 m-5 max-md:grid-cols-2'>
           <Upcomingbox></Upcomingbox>
           <Upcomingbox></Upcomingbox>
           <Upcomingbox></Upcomingbox>
@@ -24,7 +24,7 @@ const Home = () => {
           <h1 className='text-left mt-7 ml-8 font-semibold'>Favourite</h1>
           <p className='text-right mt-7 mr-8 font-normal hover:underline ml-8'><a href="url">Show all</a></p>
         </div>
-        <div className='grid grid-cols-3 gap-5 m-5 max-[120px]:grid-cols-2'>
+        <div className='w-full grid grid-cols-3 gap-2 m-5 max-md:grid-cols-2'>
           <Favbox></Favbox>
           <Favbox></Favbox>
           <Favbox></Favbox>
