@@ -12,8 +12,8 @@ const Artistbox = () => {
                 <a href="/">
                     <img className="rounded-t-lg" src="https://www.daco-thai.com/wp-content/uploads/2021/07/Stamp-01.jpg" alt="" />
                 </a>
-                <div className="p-3 grid grid-cols-2">
-                    <h5 className="mt-1 ml-10 text-xl font-medium text-neutral-800">
+                <div className="p-3 grid grid-cols-5">
+                    <h5 className="mt-1 ml-10 col-span-4 text-xl font-medium text-neutral-800">
                         Stamp
                     </h5>
                     <div>
