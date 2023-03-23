@@ -7,16 +7,18 @@ const Artistbox = () => {
     //     <h1 className='text-white'>Date</h1>
     // </div>
     <div>
-        <div class="flex justify-center">
-            <div class="block max-w-sm bg-white rounded-lg shadow-lg">
+        <div className="flex justify-center">
+            <div className="block max-w-sm bg-white rounded-lg shadow-lg">
                 <a href="/">
-                    <img class="rounded-t-lg" src="https://www.daco-thai.com/wp-content/uploads/2021/07/Stamp-01.jpg" alt="" />
+                    <img className="rounded-t-lg" src="https://www.daco-thai.com/wp-content/uploads/2021/07/Stamp-01.jpg" alt="" />
                 </a>
-                <div class="p-4 grid grid-cols-2">
-                    <h5 class="mb-2 text-xl font-medium text-neutral-800">
+                <div className="p-3 grid grid-cols-2">
+                    <h5 className="mt-1 ml-10 text-xl font-medium text-neutral-800">
                         Stamp
                     </h5>
-                    <Like></Like>
+                    <div>
+                        <Like></Like>
+                    </div>
                     {/* <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
                         @Siam Square
                     </p> */}
