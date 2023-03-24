@@ -20,6 +20,9 @@ const Slide = () => {
     {
       url: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80",
     },
+    {
+      url: "https://images.workpointnews.com/workpointnews/2022/03/18003821/1647538698_71194_IMG_0767.jpg",
+    },
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
