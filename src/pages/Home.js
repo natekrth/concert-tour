@@ -10,7 +10,6 @@ import Navbar from '../components/Navbar'
 const Home = () => {
   return (
     <div className='m-auto'>
-      <Navbar></Navbar>
       <Slide></Slide>
       <div className='w-full m-auto'>
         <div className='grid grid-cols-3'>
@@ -47,7 +46,7 @@ const Home = () => {
           <Artistbox></Artistbox>
         </div>
       </div>
-      <Login></Login>
+      {/* <Login isVisable></Login> */}
     </div>
   )
 }
