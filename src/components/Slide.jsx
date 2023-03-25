@@ -60,17 +60,17 @@ const Slide = () => {
 
   return (
     <div>
-      <div className="max-w-[1400px] h-[300px] w-full m-auto py-8 px-10 -mb-9 group">
+      <div className="max-w-[1400px] h-[300px] w-full m-auto py-8 px-10 -mb-9 relative group">
         <div
           style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-          className="w-full h-full rounded-2xl bg-center bg-cover duration-1000"
+          className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
         ></div>
         {/* Left Arrow */}
-        <div className="max-[1400px]:hidden group-hover:block absolute top-64 -translate-x-0 translate-y-[-50%] left-10 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+        <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-10 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
           <BsChevronCompactLeft onClick={prevSlide} size={30}/>
         </div>
         {/* Right Arrow */}
-        <div className="max-[1400px]:hidden group-hover:block absolute top-64 -translate-x-0 translate-y-[-50%] right-10 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+        <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-10 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
           <BsChevronCompactRight onClick={nextSlide} size={30} />
         </div>
         <div className="flex top-4 justify-center py-2">
