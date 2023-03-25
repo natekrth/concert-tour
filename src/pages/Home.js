@@ -47,7 +47,7 @@ const Home = () => {
           <Artistbox></Artistbox>
         </div>
       </div>
-      {/* <Login></Login> */}
+      <Login></Login>
     </div>
   )
 }
